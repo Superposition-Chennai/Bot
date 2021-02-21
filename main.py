@@ -93,27 +93,27 @@ async def on_message(message):
 
 client.run(os.getenv("TOKEN"))
 
-bot = commands.Bot(command_prefix='!')
+# bot = commands.Bot(command_prefix='!')
 
-@bot.command(name='99')
-async def nine_nine(ctx):
-    brooklyn_99_quotes = [
-        'I\'m the human form of the 💯 emoji.',
-        'Bingpot!',
-        (
-            'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt.'
-        ),
-    ]
+# @bot.command(name='99')
+# async def nine_nine(ctx):
+#     brooklyn_99_quotes = [
+#         'I\'m the human form of the 💯 emoji.',
+#         'Bingpot!',
+#         (
+#             'Cool. Cool cool cool cool cool cool cool, '
+#             'no doubt no doubt no doubt no doubt.'
+#         ),
+#     ]
 
-    response = random.choice(brooklyn_99_quotes)
-    await ctx.send(response)
+#     response = random.choice(brooklyn_99_quotes)
+#     await ctx.send(response)
 
-lmp = "12/2/21"
+# lmp = "12/2/21"
 
-@bot.command(name='lmp')
-async def lmp(ctx):
-    await ctx.send(lmp)
+# @bot.command(name='lmp')
+# async def lmp(ctx):
+#     await ctx.send(lmp)
 
 
-bot.run(os.getenv("TOKEN"))
+# bot.run(os.getenv("TOKEN"))
