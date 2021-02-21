@@ -3,7 +3,7 @@ import os
 import requests
 import json
 import random
-from replit import db
+#from replit import db
 from discord.ext import commands
 
 client = discord.Client()
@@ -52,7 +52,7 @@ async def on_message(message):
 
   if message.content.startswith("$hi"):
     await message.channel.send("Greetings,Hope you have been well. Fret not, Im here to alleviate your mood!")
-    
+
   if msg.startswith("$inspire"):
     quote = get_quote()
     await message.channel.send(quote)
@@ -118,5 +118,9 @@ lmp = "12/2/21"
 async def lmp(ctx):
     await ctx.send(lmp)
 
+@bot.command(name='predictperiod')
+async def lmp(ctx):
+    new_date = lmp + timedelta(28)
+    await ctx.send(new_date)
 
 bot.run(os.getenv("TOKEN"))
