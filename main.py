@@ -50,6 +50,9 @@ async def on_message(message):
 
   msg = message.content
 
+  if message.content.startswith("$hi"):
+    await message.channel.send("Greetings,Hope you have been well. Fret not, Im here to alleviate your mood!")
+    
   if msg.startswith("$inspire"):
     quote = get_quote()
     await message.channel.send(quote)
